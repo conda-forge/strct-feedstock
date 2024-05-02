@@ -1,5 +1,5 @@
 {% set name = "strct" %}
-{% set version = "0.0.32" %}
+{% set version = "0.0.34" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6ff67907c530f249e5c5aa77e3d6fa0e74e3d0de1c8be8ddd1a10980ca6ed621
+  sha256: c46d38628e442de341601958bc3fb9d7fa2adba4131bdecdf76c20d7079fe885
 
 build:
   noarch: python
