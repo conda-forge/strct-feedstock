@@ -1,5 +1,5 @@
 {% set name = "strct" %}
-{% set version = "0.0.34" %}
+{% set version = "0.0.35" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c46d38628e442de341601958bc3fb9d7fa2adba4131bdecdf76c20d7079fe885
+  sha256: 82ed6a7d4ab520f5eb1e75f059fb8eb1fb44cc2840e4ca97b48bd9080689c776
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
